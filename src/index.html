@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>webpack starterkit</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>inxy-test</title>
 </head>
 <body>
-  <h1>webpack starter</h1>
-  <p>✨ A lightweight foundation for your next webpack based frontend project.</p>
+    <div class="header">
+        <h1>Servers catalog</h1>
+        <div class="location-wrapper">
+            <h3 class="filter-title">Location</h3>
+            <select id="location-filter">
+                <option value="">All locations</option>
+            </select>
+        </div>
+        <div class="provider-wrapper">
+            <h3 class="filter-title">Provider</h3>
+            <select id="provider-filter">
+                <option value="">All providers</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="content-wrapper" class="elements-wrapper" >
+        <div class="title-block">
+            <div class="title-item title-item-js" data-col="provider">Provider</div>
+            <div class="title-item title-item-js" data-col="brand">Brand</div>
+            <div class="title-item title-item-js" data-col="location">Location</div>
+            <div class="title-item title-item-js" data-col="cpu">CPU</div>
+            <div class="title-item title-item-js" data-col="drive">Drive</div>
+            <div class="title-item title-item-js" data-col="price">Price</div>
+        </div>
+        <div id="server-list">
+            <!-- data goes here -->
+        </div>
+        <div class="server-pagination">
+            <!-- next page button -->
+        </div>
+
+
+    </div>
 </body>
 </html>
